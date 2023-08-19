@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\47263104-de62-459f-863c-ea1fa87a2543",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\4bdc7966-b8a1-4219-add0-4182bc53e8b9",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\758404c5-f382-4a8e-a119-8f17fe7c8f0a",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\de9eb9b2-1f4d-4772-b3c6-4594d8386cb2",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.GestionCommercialeServices.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.GestionCommercialeServices.props",
+      "PackagePath": "build\\GestionCommercialeServices.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.GestionCommercialeServices.props",
+      "PackagePath": "buildMultiTargeting\\GestionCommercialeServices.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.GestionCommercialeServices.props",
+      "PackagePath": "buildTransitive\\GestionCommercialeServices.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

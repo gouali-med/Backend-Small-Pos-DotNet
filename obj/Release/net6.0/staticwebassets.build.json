@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "i9HeH2r3cbbkKY5JT1gT80dwBW6EqzBSUzyzS6s5tcg=",
+  "Source": "GestionCommercialeServices",
+  "BasePath": "_content/GestionCommercialeServices",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GestionCommercialeServices\\wwwroot",
+      "Source": "GestionCommercialeServices",
+      "ContentRoot": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\",
+      "BasePath": "_content/GestionCommercialeServices",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\11033911-00f4-446c-b5e1-168c3cb7967d_chariot.png",
+      "SourceId": "GestionCommercialeServices",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\",
+      "BasePath": "_content/GestionCommercialeServices",
+      "RelativePath": "Images/11033911-00f4-446c-b5e1-168c3cb7967d_chariot.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\11033911-00f4-446c-b5e1-168c3cb7967d_chariot.png"
+    }
+  ]
+}

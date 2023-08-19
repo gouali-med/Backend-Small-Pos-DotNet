@@ -1,0 +1,980 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "GestionCommercialeServices",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Categories/GetAll": {
+      "get": {
+        "tags": [
+          "Categories"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Categories/Add": {
+      "post": {
+        "tags": [
+          "Categories"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "Picture",
+            "type": "file"
+          },
+          {
+            "in": "formData",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "TaxeID",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Categories/Edit": {
+      "post": {
+        "tags": [
+          "Categories"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Category"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Categories/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Categories"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/PaymentClients/GetAll": {
+      "get": {
+        "tags": [
+          "PaymentClients"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/PaymentClients/Add": {
+      "post": {
+        "tags": [
+          "PaymentClients"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PaymentClient"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/PaymentClients/Edit": {
+      "post": {
+        "tags": [
+          "PaymentClients"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PaymentClient"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/PaymentClients/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "PaymentClients"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/GetAll": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/Add": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/Edit": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Sales/GetAll": {
+      "get": {
+        "tags": [
+          "Sales"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Sales/Add": {
+      "post": {
+        "tags": [
+          "Sales"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Sale"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Sales/Edit": {
+      "post": {
+        "tags": [
+          "Sales"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Sale"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Sales/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Sales"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Taxes/GetAll": {
+      "get": {
+        "tags": [
+          "Taxes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Taxes/Add": {
+      "post": {
+        "tags": [
+          "Taxes"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Taxe"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Taxes/Edit": {
+      "post": {
+        "tags": [
+          "Taxes"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Taxe"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Taxes/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Taxes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TypePayments/GetAll": {
+      "get": {
+        "tags": [
+          "TypePayments"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TypePayments/Add": {
+      "post": {
+        "tags": [
+          "TypePayments"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/TypePayment"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TypePayments/Edit": {
+      "post": {
+        "tags": [
+          "TypePayments"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/TypePayment"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TypePayments/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "TypePayments"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/UniteOfSales/GetAll": {
+      "get": {
+        "tags": [
+          "UniteOfSales"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/UniteOfSales/Add": {
+      "post": {
+        "tags": [
+          "UniteOfSales"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UniteOfSale"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/UniteOfSales/Edit": {
+      "post": {
+        "tags": [
+          "UniteOfSales"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UniteOfSale"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/UniteOfSales/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "UniteOfSales"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Category": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "picture": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "taxeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "taxe": {
+          "$ref": "#/definitions/Taxe"
+        }
+      }
+    },
+    "Client": {
+      "required": [
+        "name",
+        "region",
+        "regionID",
+        "telephone",
+        "typeClient"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "typeClient": {
+          "type": "string"
+        },
+        "regionID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "telephone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "siteweb": {
+          "type": "string"
+        },
+        "adresse": {
+          "type": "string"
+        },
+        "ice": {
+          "type": "string"
+        },
+        "rc": {
+          "type": "string"
+        },
+        "if": {
+          "type": "string"
+        },
+        "tp": {
+          "type": "string"
+        },
+        "region": {
+          "$ref": "#/definitions/Region"
+        }
+      }
+    },
+    "Company": {
+      "required": [
+        "name",
+        "telephone"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "picturePath": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "telephone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "siteweb": {
+          "type": "string"
+        },
+        "adresse": {
+          "type": "string"
+        },
+        "ice": {
+          "type": "string"
+        },
+        "rc": {
+          "type": "string"
+        },
+        "if": {
+          "type": "string"
+        },
+        "tp": {
+          "type": "string"
+        }
+      }
+    },
+    "PaymentClient": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateOperation": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "payed": {
+          "format": "float",
+          "type": "number"
+        },
+        "dateEcheance": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "typePaymentID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "venteID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        },
+        "typePayment": {
+          "$ref": "#/definitions/TypePayment"
+        },
+        "vente": {
+          "$ref": "#/definitions/Sale"
+        }
+      }
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "barCode": {
+          "type": "string"
+        },
+        "picturePath": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "categoryID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "uniteOfSaleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "purchasPrice": {
+          "format": "float",
+          "type": "number"
+        },
+        "price": {
+          "format": "float",
+          "type": "number"
+        },
+        "stockAlerte": {
+          "format": "float",
+          "type": "number"
+        },
+        "category": {
+          "$ref": "#/definitions/Category"
+        },
+        "uniteOfSale": {
+          "$ref": "#/definitions/UniteOfSale"
+        }
+      }
+    },
+    "Region": {
+      "required": [
+        "name"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "Sale": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateOperation": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "totalHT": {
+          "format": "float",
+          "type": "number"
+        },
+        "totalTVA": {
+          "format": "float",
+          "type": "number"
+        },
+        "totalTCC": {
+          "format": "float",
+          "type": "number"
+        },
+        "solde": {
+          "format": "float",
+          "type": "number"
+        },
+        "reste": {
+          "format": "float",
+          "type": "number"
+        },
+        "clientID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "client": {
+          "$ref": "#/definitions/Client"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "Taxe": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "valeur": {
+          "format": "float",
+          "type": "number"
+        }
+      }
+    },
+    "TypePayment": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "UniteOfSale": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "companyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "company": {
+          "$ref": "#/definitions/Company"
+        }
+      }
+    }
+  }
+}

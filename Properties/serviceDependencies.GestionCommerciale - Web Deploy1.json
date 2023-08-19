@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/GestionCommerciale/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsSqlCon_C6F13F430C",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/gestioncommercialeservicesdbserver/databases/GestionCommercialeServices_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:SqlCon"
+    },
+    "apis1": {
+      "apiEndpoint": "https://gestioncommercialeservicesapi.azure-api.net/",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/GestionCommercialeServicesapi/apis/GestionCommercialeServices",
+      "type": "apis.azure"
+    }
+  }
+}

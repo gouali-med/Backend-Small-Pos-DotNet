@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <History>False|2023-08-03T15:42:37.5797216Z;False|2023-08-03T11:11:17.9891871+01:00;False|2023-08-03T11:11:07.3256250+01:00;False|2023-08-03T11:10:43.7762814+01:00;False|2023-08-03T11:10:29.3198690+01:00;True|2023-08-03T11:07:36.6282595+01:00;False|2023-07-07T14:23:31.1505855+01:00;False|2023-07-07T14:23:00.1254742+01:00;False|2023-07-07T14:22:25.4593848+01:00;False|2023-07-07T14:22:06.1142920+01:00;False|2023-07-07T14:21:41.1033623+01:00;False|2023-07-07T14:21:28.8017496+01:00;False|2023-07-07T14:20:05.3406493+01:00;False|2023-07-07T14:19:49.4484082+01:00;False|2023-07-07T14:19:39.3179941+01:00;False|2023-07-07T14:19:06.8403018+01:00;True|2023-06-20T12:57:36.8657554+01:00;False|2023-06-20T12:56:01.6253916+01:00;False|2023-06-20T12:55:26.6893009+01:00;True|2023-06-20T12:54:08.2105914+01:00;True|2023-06-20T12:51:55.7889960+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SqlCon">
+      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=aspnet-53bc9b9d-9d6a-45d4-8429-2a2761773502%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

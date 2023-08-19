@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\11033911-00f4-446c-b5e1-168c3cb7967d_chariot.png",
+      "PackagePath": "staticwebassets\\Images\\11033911-00f4-446c-b5e1-168c3cb7967d_chariot.png"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.GestionCommercialeServices.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.GestionCommercialeServices.props",
+      "PackagePath": "build\\GestionCommercialeServices.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.GestionCommercialeServices.props",
+      "PackagePath": "buildMultiTargeting\\GestionCommercialeServices.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.GestionCommercialeServices.props",
+      "PackagePath": "buildTransitive\\GestionCommercialeServices.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

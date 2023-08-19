@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "TeQZDYF/b9n4oSwiKLADyM20zB+PWbuma58XOtnxlHE=",
+  "Source": "GestionCommercialeServices",
+  "BasePath": "_content/GestionCommercialeServices",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GestionCommercialeServices\\wwwroot",
+      "Source": "GestionCommercialeServices",
+      "ContentRoot": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\",
+      "BasePath": "_content/GestionCommercialeServices",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\47263104-de62-459f-863c-ea1fa87a2543",
+      "SourceId": "GestionCommercialeServices",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\",
+      "BasePath": "_content/GestionCommercialeServices",
+      "RelativePath": "Images/47263104-de62-459f-863c-ea1fa87a2543",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\47263104-de62-459f-863c-ea1fa87a2543"
+    },
+    {
+      "Identity": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\4bdc7966-b8a1-4219-add0-4182bc53e8b9",
+      "SourceId": "GestionCommercialeServices",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\",
+      "BasePath": "_content/GestionCommercialeServices",
+      "RelativePath": "Images/4bdc7966-b8a1-4219-add0-4182bc53e8b9",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\4bdc7966-b8a1-4219-add0-4182bc53e8b9"
+    },
+    {
+      "Identity": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\758404c5-f382-4a8e-a119-8f17fe7c8f0a",
+      "SourceId": "GestionCommercialeServices",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\",
+      "BasePath": "_content/GestionCommercialeServices",
+      "RelativePath": "Images/758404c5-f382-4a8e-a119-8f17fe7c8f0a",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\758404c5-f382-4a8e-a119-8f17fe7c8f0a"
+    },
+    {
+      "Identity": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\Images\\de9eb9b2-1f4d-4772-b3c6-4594d8386cb2",
+      "SourceId": "GestionCommercialeServices",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GestionCommerciale\\GestionCommercialeServices\\wwwroot\\",
+      "BasePath": "_content/GestionCommercialeServices",
+      "RelativePath": "Images/de9eb9b2-1f4d-4772-b3c6-4594d8386cb2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\de9eb9b2-1f4d-4772-b3c6-4594d8386cb2"
+    }
+  ]
+}
